@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+.content-container-light {
+  height: 740px;
+  background-color: whitesmoke;
+  margin-top: -32.5px;
+  padding-top: 0px;
+  background-image: url(./img/react-logo.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 30%;
+  background-size: 300px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-container-dark {
+  height: 743px;
+  background-color: rgb(25, 25, 31);
+  margin-top: -32.5px;
+  padding-top: 0px;
+  color: rgb(197, 196, 196);
+  background-image: url(./img/react-logo.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 30%;
+  background-size: 300px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-topic {
+  font-size: 48px;
+  padding: 50px 50px;
+  padding-bottom: 15px;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content-container-dark > .list-item {
+  color: rgb(151, 151, 151);
 }
 
-.App-link {
-  color: #61dafb;
+.list-item {
+  /* font-size: 20px; */
+  padding: 0px 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list-item > li {
+  padding: 10px;
+  font-size: 30px;
 }
+/* .list-item > li > span {
+  font-size: 20px;
+  
+} */
+
+li::marker {
+  color: rgb(42, 172, 190);
+  font-size: 35px;
+}
+
